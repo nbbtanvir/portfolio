@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+html{
+scroll-behavior: smooth;
+}
+@media (max-width:550px){
+*{
+/* remove the border after your work has been done */
+/* border:1px solid black; */
+font-family: 'Nunito', sans-serif;
+padding: 0;
+margin: 0;
+}
+/* navigation for mobile 3 dot design */
+.threeDot{
+display: flex;
+align-items: center;
+justify-content: space-between;
+height: 20px;
+width: 30px;
+border-radius: 10px;
+margin: 30px;
+padding: 0px 5px ;
+background-color: rgb(207, 207, 207);
+position: fixed;
+transition: background-color .3s ease-in-out 0s;
+}
+.threeDot:hover{
+background-color: #7b20cf;
+}
+.dot{
+height: 5px;
+width: 5px;
+border-radius: 2.5px;
+margin: 0px;
+background-color: rgb(250, 250, 250);
+}
+.menu{
+display: none;
+flex-direction: column;
+background: linear-gradient(-45deg,#ac59fa, #6100bd,#ac59fa);
+position: fixed;
+padding: 10px;
+top: 30%;
+transform: translateY(-50%);
+border-radius: 0px 20px 20px 0px;
+transition: background-color .3s ease-in-out 0s;
+}
+.menu.active{
+display: flex;
+}
+.links{
+text-decoration: none;
+background-color: transparent;
+color: white;
+padding: 10px;
+border-radius: 10px;
+margin: 5px;
+transition: background-color .3s ease-in-out 0s;
+}
+.links:hover{
+background-color: white;
+color: green;
+}
+.links::before{
+position: absolute;
+content: '';
+left:4%;
+transform: translateX(-50%);
+height: 25px;
+width: 1px;
+background-color: rgb(255, 255, 255);
+}
+/* final page design */
+.pageOne{
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.image{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+#tanvir{
+height: 250px;
+}
+.introduction{
+display: flex;
+flex-direction: column;
+}
+h1{
+font-size: 2rem;
+margin: 0px 0px 0px 40px ;
+}
+h2{
+margin: 0px 0px 0px 40px ;
+font-size: 1rem;
+color: rgb(180, 180, 180);
+}
+.explain{
+padding: 0px 20px 0px 0px;
+margin: 10px 4px 10px 40px;
+color: rgb(180, 180, 180);
+}
+#CMbtn{
+text-decoration: none;
+font-size: 1rem;
+margin: 10px 0px 0px 40px ;
+width: 175px;
+}
+h3{
+width: 150px;
+height: 40px;
+padding: 5px;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #7b20cf;
+color: white;
+border-radius: 10px;
+transition: all .3s ease 0s;
+cursor: pointer;
+}
+h3:hover{
+background-color: #652a9c;
+width: 160px;
+}
+.pageTwo{
+height: 100vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+position: relative;
+z-index: -1;
+/* background-color: #7b20cf; */
+}
+#pageTwo{
+position: absolute;
+top: 0%;
+}
+/* page two styling */
+.pageTwo{
+margin: 0;
+text-align: center;
+}
+.progress{
+display: flex;
+margin: 50px;
+align-items: center;
+justify-content: space-between;
+}
+.html{
+background-color: #7b20cf;
+color: white;
+padding: 5px;
+margin: 5px;
+border-radius: 10px;
+}
+.pageTwo .explain{
+margin: 0px 40px;
+}
+.progressBar{
+width: 70px;
+}
+.pageThree{
+height: 100vh;
+background-color: #7b20cf;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+color: white;
+position: relative;
+z-index: -1;
+}
+#pageThree{
+position: absolute;
+top: 0%;
+}
+.project{
+display: flex;
+justify-content: space-between;
+margin: 20px 0px 0px 0px;
+padding: 10px;
+}
+.howMuch{
+margin: 5px;
+padding: 10px;
+text-align: center;
+}
+.pageFour{
+height: 100vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+position: relative;
+z-index: -1;
+}
+#pageFour{
+position: absolute;
+top: 0%;
+}
+.allSoftwere{
+background-color: #7b20cf;
+margin: 40px;
+border-radius: 20px;
+}
+.sofweres{
+display: flex;
+}
+.abode{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding: 20px;
+}
+.abode p{
+color: rgb(255, 255, 255);
+}
+.adobe-logo{
+height: 50px;
+}
+.pageFive{
+height: 100vh;
+position: relative;
+display: flex;
+flex-direction: column;
+/* align-items: center; */
+background:linear-gradient(#7b20cf,white);
+color: white;
+}
+.services{
+position: relative;
+top: 10%;
+}
+.tanvir-smilly{
+height: 300px;
+position: absolute;
+bottom: 0%;
+left: 0%;
+}
+.love{
+position: absolute;
+bottom: 30%;
+right: 5%;
+margin: 0px;
+}
+.love h1 a{
+font-size: 1.5rem;
+text-decoration: none;
+color: white;
+background-color: #7b20cf;
+padding: 10px;
+border-radius: 15px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.download{
+height: 30px;
+padding: 0;
+margin: 0;
+}
+}
